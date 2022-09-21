@@ -1,0 +1,23 @@
+{
+  "name": "cars-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "$(npm bin)/tsc",
+    "build:watch": "$(npm bin)/tsc --watch",
+    "start": "$(npm bin)/nodemon --delay 250ms --watch '../*/dist/' --exec node dist/index.js"
+  },
+  "dependencies": {
+    "@forestadmin/agent": "1.0.0-beta.57",
+    "@forestadmin/datasource-mongoose": "^1.0.0-beta.20",
+    "dotenv": "^16.0.1",
+    "node-fetch": "^2.6.7",
+    "pg": "^8.8.0",
+    "sequelize": "^6.21.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "typescript": "^4.8.2"
+  }
+}
